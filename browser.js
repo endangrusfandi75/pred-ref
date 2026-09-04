@@ -16,14 +16,9 @@ function sleep(ms) {
 }
 
 function log(tag, msg) {
-  // Set VERBOSE=1 in .env to enable detailed logs.
-  const verbose = process.env.VERBOSE === '1';
-  // Always show high‑level info (e.g., processing wallet status) if tag is 'info'
-  if (tag === 'info') {
-    console.log(`  [${tag}] ${msg}`);
-    return;
-  }
-  if (verbose) {
+  // Always log high-level info or when VERBOSE is not explicitly set to 0
+  const verbose = process.env.VERBOSE !== '0';
+  if (verbose || tag === 'info') {
     console.log(`  [${tag}] ${msg}`);
   }
 }
@@ -1109,14 +1104,23 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
         log(tag, "CAPTCHA solve result: " + solved);
 
         if (solved) {
-          await sleep(8000);
+          await sleep(5000);
+          // If MetaMask or Submit button is visible, click again to finish login handshake
+          try {
+            await clickTextAll(page, "MetaMask");
+            await sleep(2000);
+            await clickTextAll(page, "Retry");
+            await sleep(2000);
+            await clickTextAll(page, "Sign");
+          } catch (e) {}
+
           var stillError = await page.evaluate(function() {
             var text = document.body.innerText || "";
             return text.indexOf("CAPTCHA") >= 0 || text.indexOf("went wrong") >= 0;
           }).catch(function() { return false; });
 
           if (!stillError) {
-            log(tag, "CAPTCHA solved successfully!");
+            log(tag, "CAPTCHA solved and form submitted!");
             break;
           }
           log(tag, "Still showing error after solve, retrying...");
@@ -1159,7 +1163,7 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
     async function findTokenInFrame(frame, label) {
       try {
         return await frame.evaluate(function() {
-          function isPredJWT(val) {
+          function isTokenJWT(val) {
             if (!val || val.length < 50) return false;
             var p = val.split(".");
             if (p.length !== 3) return false;
@@ -1168,48 +1172,48 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
               if (!h.alg) return false;
               try {
                 var payload = JSON.parse(atob(p[1].replace(/-/g, "+").replace(/_/g, "/")));
-                // ONLY pred.app access tokens — not privy tokens
-                if (payload.iss && (payload.iss.indexOf("pred.app") >= 0)) return true;
+                if (payload.iss && (payload.iss.indexOf("pred.app") >= 0 || payload.iss.indexOf("privy") >= 0)) return true;
+                if (payload.aud && (payload.aud.indexOf("pred.app") >= 0 || payload.aud.indexOf("privy") >= 0)) return true;
               } catch (e) {}
-              return false;
+              return h.typ === "JWT" && val.length > 200;
             } catch (e) { return false; }
           }
           // PRIORITIZE pred.app access_token key specifically
           try {
             var at = localStorage.getItem("access_token");
-            if (at && isPredJWT(at)) return { token: at, source: "localStorage:access_token" };
+            if (at && isTokenJWT(at)) return { token: at, source: "localStorage:access_token" };
           } catch (e) {}
           try {
             var at2 = localStorage.getItem("accessToken");
-            if (at2 && isPredJWT(at2)) return { token: at2, source: "localStorage:accessToken" };
+            if (at2 && isTokenJWT(at2)) return { token: at2, source: "localStorage:accessToken" };
           } catch (e) {}
-          // localStorage (only pred.app tokens)
+          // localStorage
           for (var i = 0; i < localStorage.length; i++) {
             var k = localStorage.key(i);
             var v = localStorage.getItem(k);
-            if (isPredJWT(v)) return { token: v, source: "localStorage:" + k };
+            if (isTokenJWT(v)) return { token: v, source: "localStorage:" + k };
           }
           // sessionStorage
           for (var i = 0; i < sessionStorage.length; i++) {
             var k = sessionStorage.key(i);
             var v = sessionStorage.getItem(k);
-            if (isPredJWT(v)) return { token: v, source: "sessionStorage:" + k };
+            if (isTokenJWT(v)) return { token: v, source: "sessionStorage:" + k };
           }
-          // cookies (only pred.app token cookies)
+          // cookies
           var cookies = document.cookie.split(";");
           for (var i = 0; i < cookies.length; i++) {
             var parts = cookies[i].split("=");
             if (parts.length >= 2) {
               var val = parts.slice(1).join("=").trim();
-              if (isPredJWT(val)) return { token: val, source: "cookie:" + parts[0].trim() };
+              if (isTokenJWT(val)) return { token: val, source: "cookie:" + parts[0].trim() };
             }
           }
-          // window-level token globals (only pred.app tokens)
-          var globals = ["accessToken", "access_token", "token", "idToken", "authToken"];
+          // window-level token globals
+          var globals = ["accessToken", "access_token", "token", "idToken", "authToken", "privyToken", "privy_token"];
           for (var gi = 0; gi < globals.length; gi++) {
             try {
               var gv = window[globals[gi]];
-              if (typeof gv === "string" && isPredJWT(gv)) return { token: gv, source: "window." + globals[gi] };
+              if (typeof gv === "string" && isTokenJWT(gv)) return { token: gv, source: "window." + globals[gi] };
             } catch (e) {}
           }
           return null;
