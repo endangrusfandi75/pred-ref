@@ -590,6 +590,10 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
     "--disable-features=IsolateOrigins,site-per-process",
     "--disable-setuid-sandbox",
     "--disable-dev-shm-usage",
+    "--disable-software-rasterizer",
+    "--disable-extensions",
+    "--disable-default-apps",
+    "--no-zygote",
   ];
 
   var chromeExecutable = process.env.CHROME_BIN || process.env.PUPPETEER_EXECUTABLE_PATH || "/usr/bin/google-chrome";
@@ -622,7 +626,15 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
   }
 
   var pages = await browser.pages();
-  var page = pages.length > 0 ? pages[pages.length - 1] : await browser.newPage();
+  var page = pages.length > 0 ? pages[0] : await browser.newPage();
+
+  page.on("error", function(e) {
+    log(tag, "Page crashed: " + (e ? e.message : "unknown"));
+  });
+  page.on("close", function() {
+    log(tag, "Page closed");
+  });
+
   log(tag, "Page ready, URL: " + page.url());
 
   try {
@@ -853,7 +865,7 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
     await sleep(4000);
 
     log(tag, "Page loaded: " + page.url());
-    await page.screenshot({ path: "/tmp/pred-loaded-" + walletInfo.index + ".png" });
+    try { await page.screenshot({ path: "/tmp/pred-loaded-" + walletInfo.index + ".png" }); } catch (e) {}
 
     // ── FIX: Intercept network responses to capture auth tokens ────────
     var capturedPrivyToken = null;
@@ -986,8 +998,10 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
     await sleep(6000);
 
     // Screenshot after clicking MetaMask (shows CAPTCHA or auth prompt)
-    await page.screenshot({ path: "/tmp/pred-debug-" + walletInfo.index + ".png" });
-    log(tag, "Screenshot saved: /tmp/pred-debug-" + walletInfo.index + ".png");
+    try {
+      await page.screenshot({ path: "/tmp/pred-debug-" + walletInfo.index + ".png" });
+      log(tag, "Screenshot saved: /tmp/pred-debug-" + walletInfo.index + ".png");
+    } catch (e) {}
 
     // ── FIX: Always attempt CAPTCHA solve (not just on error) ─────────────────
     // Some flows show CAPTCHA without explicit error text
@@ -1089,7 +1103,7 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
           await sleep(4000);
         }
 
-        await page.screenshot({ path: "/tmp/pred-pre-captcha-" + walletInfo.index + "-" + attempt + ".png" });
+        try { await page.screenshot({ path: "/tmp/pred-pre-captcha-" + walletInfo.index + "-" + attempt + ".png" }); } catch (e) {}
 
         var solved = await solveCaptchaFull(page, captchaApiKey, referralUrl);
         log(tag, "CAPTCHA solve result: " + solved);
@@ -1108,7 +1122,7 @@ async function signupWithReferral(walletInfo, referralCode, captchaApiKey, delay
           log(tag, "Still showing error after solve, retrying...");
         }
 
-        await page.screenshot({ path: "/tmp/pred-postsolve-" + walletInfo.index + "-" + attempt + ".png" });
+        try { await page.screenshot({ path: "/tmp/pred-postsolve-" + walletInfo.index + "-" + attempt + ".png" }); } catch (e) {}
       }
     }
 
