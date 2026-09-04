@@ -1,0 +1,219 @@
+# fingerprint.txt - Pool perangkat nyata dari seluruh dunia
+# Format per baris (pipe-separated):
+# <type>|<deviceName>|<uaModel>|<platform>|<dipWidth>|<dipHeight>|<gpuVendor>|<gpuRenderer>
+# type: android | ios | tablet | desktop
+# Baris yang diawali # diabaikan
+
+# ===== SAMSUNG (Android) =====
+android|Samsung Galaxy S24 Ultra|SM-S928B|Linux armv8l|384|854|Samsung|ANGLE (Samsung Xclipse 940 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S24+|SM-S926B|Linux armv8l|384|832|Samsung|ANGLE (Samsung Xclipse 940 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S24|SM-S921B|Linux armv8l|360|780|Samsung|ANGLE (Samsung Xclipse 940 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S23 Ultra|SM-S918B|Linux armv8l|384|854|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S23+|SM-S916B|Linux armv8l|384|832|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S23|SM-S911B|Linux armv8l|360|780|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S22 Ultra|SM-S908B|Linux armv8l|384|854|Samsung|ANGLE (Samsung Xclipse 920 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S22+|SM-S906B|Linux armv8l|384|832|Samsung|ANGLE (Samsung Xclipse 920 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S22|SM-S901B|Linux armv8l|360|780|Samsung|ANGLE (Samsung Xclipse 920 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S21 FE|SM-G990B|Linux armv8l|360|800|Qualcomm|ANGLE (Qualcomm Adreno (TM) 660 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy S21 Ultra|SM-G998B|Linux armv8l|384|854|Samsung|ANGLE (Samsung Xclipse 920 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Z Fold6|SM-F956B|Linux armv8l|374|890|Qualcomm|ANGLE (Qualcomm Adreno (TM) 750 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Z Flip6|SM-F741B|Linux armv8l|356|774|Qualcomm|ANGLE (Qualcomm Adreno (TM) 750 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Z Fold5|SM-F946B|Linux armv8l|374|890|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Z Flip5|SM-F731B|Linux armv8l|356|774|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A55|SM-A556B|Linux armv8l|412|915|Samsung|ANGLE (Samsung Xclipse 530 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A54|SM-A546B|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A35|SM-A356B|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A34|SM-A346B|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A15|SM-A155F|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A14|SM-A145F|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A13|SM-A135F|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy A12|SM-A127F|Linux armv8l|412|914|Mali|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy M54|SM-M546B|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy M34|SM-M346B|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Note 20 Ultra|SM-N986B|Linux armv8l|384|854|ARM|ANGLE (ARM Mali-G78 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Tab S9|SM-X710|Linux armv8l|820|1180|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Tab S8+|SM-X800|Linux armv8l|900|1400|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Tab S7 FE|SM-T733|Linux armv8l|820|1180|Qualcomm|ANGLE (Qualcomm Adreno (TM) 690 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Samsung Galaxy Tab A8|SM-X200|Linux armv8l|800|1280|ARM|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+# ===== XIAOMI / REDMI / POCO =====
+android|Xiaomi 14|23127PN0CC|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 750 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 14 Ultra|24031PN0DC|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 750 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 13T Pro|23078PND5G|Linux armv8l|393|873|ARM|ANGLE (ARM Mali-G715-Immortalis Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 13T|2306EPN60G|Linux armv8l|393|873|ARM|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 13|2211133G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 12T Pro|22081212UG|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 12T|22081212UG|Linux armv8l|393|851|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 12|2201123G|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 11T|21081111RG|Linux armv8l|393|873|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Xiaomi 11 Lite 5G|2109119DG|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 642 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 13 Pro+|23090RA98G|Linux armv8l|393|873|ARM|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 13 Pro|2312DRA50G|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 13|23124RA7EO|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 12 Pro|22101316UG|Linux armv8l|393|873|MediaTek|ANGLE (MediaTek Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 12|23021RAA2Y|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 11|2201117TG|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi Note 10 Pro|2107113SG|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 618 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Redmi A3|23129RAA4G|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO F6|24069PC21G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 735 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO F6 Pro|23113RKC6G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO F5 Pro|23013PC75G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 725 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO F5|23049PCD8G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 725 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO X6 Pro|2311DRK48G|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G615 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO X6|23122PCD1G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO X5 Pro|22101320G|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 725 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|POCO X4 Pro 5G|2201116PG|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 619 Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+# ===== GOOGLE PIXEL =====
+android|Google Pixel 8 Pro|Pixel 8 Pro|Linux armv8l|412|892|ARM|ANGLE (ARM Mali-G715 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 8|Pixel 8|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G715 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 8a|Pixel 8a|Linux armv8l|412|906|ARM|ANGLE (ARM Mali-G715 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 7 Pro|Pixel 7 Pro|Linux armv8l|412|892|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 7|Pixel 7|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 7a|Pixel 7a|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 6 Pro|Pixel 6 Pro|Linux armv8l|412|892|ARM|ANGLE (ARM Mali-G78 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 6|Pixel 6|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G78 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel 6a|Pixel 6a|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G78 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel Fold|Pixel Fold|Linux armv8l|412|892|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Google Pixel Tablet|Pixel Tablet|Linux armv8l|800|1280|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+# ===== ONEPLUS / OPPO / REALME / VIVO =====
+android|OnePlus 12|CPH2581|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 750 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OnePlus 11|CPH2449|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OnePlus 10 Pro|NE2215|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OnePlus Nord 3|CPH2493|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OnePlus Nord CE 3|CPH2563|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 725 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OnePlus Nord 2T|CPH2401|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO Find X6|PGFM10|Linux armv8l|384|854|ARM|ANGLE (ARM Mali-G715 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO Find X5|PGT110|Linux armv8l|384|854|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO Reno 11 Pro|CPH2607|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO Reno 11|CPH2599|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G615 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO Reno 10 Pro+|CPH2521|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO Reno 10 5G|CPH2531|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO A98|CPH2571|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|OPPO A78|CPH2565|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme 12 Pro+|RMX3840|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme 12 Pro|RMX3841|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme 11 Pro+ 5G|RMX3741|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme 11 Pro|RMX3771|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme GT Neo 5|RMX3706|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 725 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme GT 2 Pro|RMX3300|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|realme C67|RMX3890|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo X100 Pro|V2324A|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G720 Immortalis Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo X100|V2308|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G720 Immortalis Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo X90 Pro|V2266|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G715 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo V30 Pro|V2319|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo V29 Pro|V2303|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo V27 Pro|V2219|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo Y100|V2254|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|vivo Y27|V2209|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+# ===== HONOR / HUAWEI / MOTOROLA / INFINIX / TECNO =====
+android|HONOR Magic 6 Pro|BVL-AN00|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 750 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|HONOR 90|REA-NX9|Linux armv8l|412|915|Adreno|ANGLE (Qualcomm Adreno (TM) 725 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|HONOR 70|FNE-NX9|Linux armv8l|412|915|Adreno|ANGLE (Qualcomm Adreno (TM) 620 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|HONOR X9b|ALT-NX9|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|HUAWEI P60 Pro|MNA-AL00|Linux armv8l|412|915|Arm|ANGLE (ARM Mali-G78 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|HUAWEI Mate 50 Pro|DCO-AL00|Linux armv8l|412|915|Adreno|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Motorola Edge 40 Neo|XT2307-4|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G68 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Motorola Edge 40|XT2303-3|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Motorola G84 5G|XT2347-4|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 660 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Motorola G54|XT2343-3|Linux armv8l|412|915|Mali|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Motorola Razr 40 Ultra|XT2321-3|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Infinix GT 20 Pro|X6871|Linux armv8l|393|873|ARM|ANGLE (ARM Mali-G615 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Infinix Note 40 Pro|X6850|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G615 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Infinix Note 30 Pro|X678B|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Infinix Hot 40 Pro|X6827|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G610 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Infinix Zero 30|X6731|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|TECNO Camon 30 Pro|CK9n|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G615 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|TECNO Phantom V Fold|AE2106|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G710 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|TECNO Spark 20|KJ5n|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G52 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Sony Xperia 1 V|XQ-DQ72|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Sony Xperia 5 IV|XQ-CQ72|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|LG Velvet|LM-G910|Linux armv8l|393|873|Adreno|ANGLE (Qualcomm Adreno (TM) 620 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Asus ROG Phone 7|ASUS_AI2205|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Asus Zenfone 10|ASUS_AI2302|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Nothing Phone 2|A065|Linux armv8l|412|915|Qualcomm|ANGLE (Qualcomm Adreno (TM) 730 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Nothing Phone 2a|A142|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G615 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Sharp Aquos R8 Pro|SH-51D|Linux armv8l|393|873|Qualcomm|ANGLE (Qualcomm Adreno (TM) 740 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Oukitel WP33 Pro|WP33 Pro|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G57 Direct3D11 vs_5_0 ps_5_0, D3D11)
+android|Ulefone Armor 18T|Armor 18T|Linux armv8l|412|915|ARM|ANGLE (ARM Mali-G77 Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+# ===== APPLE iPhone / iPad =====
+ios|iPhone 15 Pro Max|iPhone15,3|iPhone|430|932|Apple Inc.|Apple A17 Pro GPU
+ios|iPhone 15 Pro|iPhone15,2|iPhone|393|852|Apple Inc.|Apple A17 Pro GPU
+ios|iPhone 15 Plus|iPhone15,4|iPhone|430|932|Apple Inc.|Apple A16 GPU
+ios|iPhone 15|iPhone15,4|iPhone|393|852|Apple Inc.|Apple A16 GPU
+ios|iPhone 14 Pro Max|iPhone15,2|iPhone|430|932|Apple Inc.|Apple A16 GPU
+ios|iPhone 14 Pro|iPhone15,2|iPhone|393|852|Apple Inc.|Apple A16 GPU
+ios|iPhone 14 Plus|iPhone14,8|iPhone|430|932|Apple Inc.|Apple A15 GPU
+ios|iPhone 14|iPhone14,7|iPhone|390|844|Apple Inc.|Apple A15 GPU
+ios|iPhone 13 Pro Max|iPhone14,3|iPhone|428|926|Apple Inc.|Apple A15 GPU
+ios|iPhone 13 Pro|iPhone14,2|iPhone|390|844|Apple Inc.|Apple A15 GPU
+ios|iPhone 13|iPhone14,5|iPhone|390|844|Apple Inc.|Apple A15 GPU
+ios|iPhone 13 mini|iPhone14,4|iPhone|375|812|Apple Inc.|Apple A15 GPU
+ios|iPhone 12 Pro Max|iPhone13,4|iPhone|428|926|Apple Inc.|Apple A14 GPU
+ios|iPhone 12 Pro|iPhone13,3|iPhone|390|844|Apple Inc.|Apple A14 GPU
+ios|iPhone 12|iPhone13,2|iPhone|390|844|Apple Inc.|Apple A14 GPU
+ios|iPhone 12 mini|iPhone13,1|iPhone|375|812|Apple Inc.|Apple A14 GPU
+ios|iPhone SE 3|iPhone14,6|iPhone|375|667|Apple Inc.|Apple A15 GPU
+ios|iPhone SE 2|iPhone12,8|iPhone|375|667|Apple Inc.|Apple A13 GPU
+ios|iPhone 11 Pro Max|iPhone12,5|iPhone|414|896|Apple Inc.|Apple A13 GPU
+ios|iPhone 11 Pro|iPhone12,3|iPhone|375|812|Apple Inc.|Apple A13 GPU
+ios|iPhone 11|iPhone12,1|iPhone|414|896|Apple Inc.|Apple A13 GPU
+ios|iPhone XS Max|iPhone11,6|iPhone|414|896|Apple Inc.|Apple A12 GPU
+ios|iPhone XS|iPhone11,2|iPhone|375|812|Apple Inc.|Apple A12 GPU
+ios|iPhone XR|iPhone11,8|iPhone|414|896|Apple Inc.|Apple A12 GPU
+ios|iPhone X|iPhone10,3|iPhone|375|812|Apple Inc.|Apple A11 GPU
+ios|iPhone 16 Pro Max|iPhone17,1|iPhone|430|932|Apple Inc.|Apple A18 Pro GPU
+ios|iPhone 16 Pro|iPhone17,1|iPhone|402|874|Apple Inc.|Apple A18 Pro GPU
+ios|iPhone 16|iPhone17,3|iPhone|393|852|Apple Inc.|Apple A18 GPU
+ios|iPhone 16 Plus|iPhone17,4|iPhone|430|932|Apple Inc.|Apple A18 GPU
+tablet|iPad Pro 13 (M4)|iPad16,4|iPad|1032|1376|Apple Inc.|Apple M4 GPU
+tablet|iPad Pro 12.9 (M2)|iPad14,5|iPad|1024|1366|Apple Inc.|Apple M2 GPU
+tablet|iPad Pro 11 (M2)|iPad14,3|iPad|834|1194|Apple Inc.|Apple M2 GPU
+tablet|iPad Air 5|iPad13,16|iPad|820|1180|Apple Inc.|Apple M1 GPU
+tablet|iPad Air 4|iPad13,1|iPad|820|1180|Apple Inc.|Apple A14 GPU
+tablet|iPad 10th Gen|iPad13,18|iPad|810|1080|Apple Inc.|Apple A14 GPU
+tablet|iPad 9th Gen|iPad12,1|iPad|810|1080|Apple Inc.|Apple A13 GPU
+tablet|iPad mini 6|iPad14,1|iPad|744|1133|Apple Inc.|Apple A15 GPU
+
+# ===== DESKTOP (Windows) =====
+desktop|Windows 11 PC (GeForce RTX 4090)|desktop|Win32|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 4090 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (GeForce RTX 4080)|desktop|Win32|2560|1440|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 4080 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (GeForce RTX 4070 Ti)|desktop|Win32|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Ti Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (GeForce RTX 4060)|desktop|Win32|1440|900|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (GeForce RTX 3080)|desktop|Win32|2560|1440|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 3080 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (GeForce RTX 3060)|desktop|Win32|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (GeForce GTX 1660 SUPER)|desktop|Win32|1680|1050|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce GTX 1660 SUPER Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (GeForce RTX 3050)|desktop|Win32|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (GeForce RTX 2070)|desktop|Win32|1920|1200|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 2070 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (GeForce GTX 1650)|desktop|Win32|1366|768|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce GTX 1650 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (Radeon RX 7900 XTX)|desktop|Win32|2560|1440|Google Inc. (AMD)|ANGLE (AMD, AMD Radeon RX 7900 XTX Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (Radeon RX 7800 XT)|desktop|Win32|1920|1080|Google Inc. (AMD)|ANGLE (AMD, AMD Radeon RX 7800 XT Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (Radeon RX 6700 XT)|desktop|Win32|2560|1440|Google Inc. (AMD)|ANGLE (AMD, AMD Radeon RX 6700 XT Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (Radeon RX 6600)|desktop|Win32|1920|1080|Google Inc. (AMD)|ANGLE (AMD, AMD Radeon RX 6600 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (Radeon RX 7600)|desktop|Win32|1920|1080|Google Inc. (AMD)|ANGLE (AMD, AMD Radeon RX 7600 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (Intel Arc A770)|desktop|Win32|2560|1440|Google Inc. (Intel)|ANGLE (Intel, Intel(R) Arc(TM) A770 Graphics Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (Intel Iris Xe)|desktop|Win32|1920|1080|Google Inc. (Intel)|ANGLE (Intel, Intel(R) Iris(R) Xe Graphics Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (Intel UHD 770)|desktop|Win32|1920|1080|Google Inc. (Intel)|ANGLE (Intel, Intel(R) UHD Graphics 770 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 10 PC (Intel HD 630)|desktop|Win32|1366|768|Google Inc. (Intel)|ANGLE (Intel, Intel(R) HD Graphics 630 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (GeForce RTX 4060 Laptop)|desktop|Win32|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Windows 11 PC (GeForce RTX 4050 Laptop)|desktop|Win32|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 4050 Laptop GPU Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+# ===== DESKTOP (macOS) =====
+desktop|MacBook Pro 16 (M3 Max)|desktop|MacIntel|1728|1117|Apple Inc.|Apple M3 Max
+desktop|MacBook Pro 14 (M3 Pro)|desktop|MacIntel|1512|982|Apple Inc.|Apple M3 Pro
+desktop|MacBook Pro 13 (M2)|desktop|MacIntel|1470|956|Apple Inc.|Apple M2
+desktop|MacBook Air 15 (M3)|desktop|MacIntel|1710|1112|Apple Inc.|Apple M3
+desktop|MacBook Air 13 (M2)|desktop|MacIntel|1470|956|Apple Inc.|Apple M2
+desktop|MacBook Air 13 (M1)|desktop|MacIntel|1440|900|Apple Inc.|Apple M1
+desktop|iMac 24 (M1)|desktop|MacIntel|2048|1148|Apple Inc.|Apple M1
+desktop|Mac mini (M2 Pro)|desktop|MacIntel|1920|1080|Apple Inc.|Apple M2 Pro
+
+# ===== DESKTOP (Linux) =====
+desktop|Ubuntu PC (GeForce RTX 3060)|desktop|Linux x86_64|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Ubuntu PC (GeForce GTX 1660)|desktop|Linux x86_64|1920|1080|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce GTX 1660 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Ubuntu PC (Radeon RX 580)|desktop|Linux x86_64|1920|1080|Google Inc. (AMD)|ANGLE (AMD, AMD Radeon RX 580 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Ubuntu PC (Intel UHD 620)|desktop|Linux x86_64|1920|1080|Google Inc. (Intel)|ANGLE (Intel, Intel(R) UHD Graphics 620 Direct3D11 vs_5_0 ps_5_0, D3D11)
+desktop|Fedora PC (GeForce RTX 3080)|desktop|Linux x86_64|2560|1440|Google Inc. (NVIDIA)|ANGLE (NVIDIA, NVIDIA GeForce RTX 3080 Direct3D11 vs_5_0 ps_5_0, D3D11)
